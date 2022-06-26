@@ -3,14 +3,32 @@ background-color:black;
 }
 p{
 	color:white;
-    font-family:VT323;
-    text-align:center;    
+    font-family:VT323;    
 }
-.box1{
+.box1,.box2{
 	border: solid white 5px;
-        
-}
-.select1{
-	display:flex;
+    display:flex;
     justify-content:space-around;
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
 }
+.title{
+	text-align:center;
+    font-size:30px;
+}
+.select,.select1{
+	font-size:30px;    
+}
+.all1, .all2{
+	margin-top:200px;
+}
+.select:hover,.select1:hover{
+color:grey;    
+}
+.all2{
+   display:none; 
+}
+
+
+
