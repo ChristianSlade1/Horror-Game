@@ -4047,23 +4047,57 @@ background-color:black;
 }
 p{
 	color:white;
-    font-family:VT323;
-    text-align:center;    
+    font-family:VT323;    
 }
-.box1{
+.box1,.box2{
 	border: solid white 5px;
-        
-}
-.select1{
-	display:flex;
+    display:flex;
     justify-content:space-around;
-}</style></head>
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.title{
+	text-align:center;
+    font-size:30px;
+}
+.select,.select1{
+	font-size:30px;    
+}
+.all1, .all2{
+	margin-top:200px;
+}
+.select:hover,.select1:hover{
+color:grey;    
+}
+.all2{
+   display:none; 
+}
+
+
+
+</style></head>
     <body>
-        <p class="title">Just Another Horror Game</p>
-        <div class="box1">
-        `	<p class="select1">Start</p>
-            <p class="select1">Close Now</p>            
+        <div class="all1">
+            <p class="title">Just Another Horror Game</p>
+            <div class="box1">
+                <p class="select">Start</p>           
+                <p class="select1">Close Now</p>            
+            </div>
+        </div>
+        <div class="all2">
+            <p class="title">You're at an abandoned house and you want to explore the secrets that lie wihin.</p>
+            <div class="box2">
+                <p class="select">Go Inside</p>           
+                <p class="select1">Look around the back</p>
+            </div>
         </div>
     
 
-</body></html>
+<script>
+/*__POPCODESTART__*/
+$(".select").click(function () {
+  $(".all1").fadeOut();
+  $(".all2").delay(500).fadeIn(400);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsImZhZGVPdXQiLCJkZWxheSIsImZhZGVJbiJdLCJtYXBwaW5ncyI6IkFBQUFBLENBQUMsQ0FBQyxTQUFELENBQUQsQ0FBYUMsS0FBYixDQUFtQixZQUFXO0FBQzFCRCxFQUFBQSxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdFLE9BQVg7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLE9BQUQsQ0FBRCxDQUFXRyxLQUFYLENBQWlCLEdBQWpCLEVBQXNCQyxNQUF0QixDQUE4QixHQUE5QjtBQUNILENBSEQiLCJzb3VyY2VzQ29udGVudCI6WyIkKFwiLnNlbGVjdFwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmFsbDFcIikuZmFkZU91dCgpO1xuICAgICQoXCIuYWxsMlwiKS5kZWxheSg1MDApLmZhZGVJbiggNDAwICk7XG59KTtcblxuXG5cbiJdfQ==</script></body></html>
