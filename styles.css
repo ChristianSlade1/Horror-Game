@@ -5,7 +5,7 @@ p{
 	color:white;
     font-family:VT323;    
 }
-.box1,.box2{
+.box{
 	border: solid white 5px;
     display:flex;
     justify-content:space-around;
@@ -20,15 +20,19 @@ p{
 .select,.select1{
 	font-size:30px;    
 }
-.all1, .all2{
+.all{
 	margin-top:200px;
 }
 .select:hover,.select1:hover{
 color:grey;    
 }
-.all2{
-   display:none; 
+.all2,.all3,.eye{
+   display:none;    
 }
+.eye{
+min-height:100vh;    
+}
+
 
 
 
