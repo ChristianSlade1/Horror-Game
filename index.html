@@ -4049,7 +4049,7 @@ p{
 	color:white;
     font-family:VT323;    
 }
-.box1,.box2{
+.box{
 	border: solid white 5px;
     display:flex;
     justify-content:space-around;
@@ -4064,40 +4064,62 @@ p{
 .select,.select1{
 	font-size:30px;    
 }
-.all1, .all2{
+.all{
 	margin-top:200px;
 }
 .select:hover,.select1:hover{
 color:grey;    
 }
-.all2{
-   display:none; 
+.all2,.all3,.eye{
+   display:none;    
 }
+.eye{
+min-height:100vh;    
+}
+
 
 
 
 </style></head>
     <body>
-        <div class="all1">
+        <div class="all all1">
             <p class="title">Just Another Horror Game</p>
-            <div class="box1">
-                <p class="select">Start</p>           
-                <p class="select1">Close Now</p>            
+            <div class="box">
+                <p class="select selectA">Start</p>           
+                <p class="select1 select1A">Close Now</p>            
             </div>
         </div>
-        <div class="all2">
+        <div class="all all2">
             <p class="title">You're at an abandoned house and you want to explore the secrets that lie wihin.</p>
-            <div class="box2">
-                <p class="select">Go Inside</p>           
-                <p class="select1">Look around the back</p>
+            <div class="box">
+                <p class="select selectB">Go Inside</p>           
+                <p class="select1 select1B">Look around the back</p>
+            </div>
+        </div>
+        <img class="eye" src="https://c.tenor.com/QhsoXzKZlXwAAAAC/eye-scary.gif">
+        <div class="all all3">
+            <p class="title">Woah! What was that?</p>
+            <div class="box">
+                <p class="select selectC">Keep on going</p>           
+                <p class="select1 select1C">Investigate The Eye</p>
             </div>
         </div>
     
 
 <script>
 /*__POPCODESTART__*/
-$(".select").click(function () {
+$(".selectA").click(function () {
   $(".all1").fadeOut();
   $(".all2").delay(500).fadeIn(400);
+}); //#2
+
+$(".selectB").click(function () {
+  $(".all2").fadeOut();
+  $(".eye").delay(5000).show(1).delay(49).hide(1);
+  $(".all3").delay(7000).fadeIn(400);
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsImZhZGVPdXQiLCJkZWxheSIsImZhZGVJbiJdLCJtYXBwaW5ncyI6IkFBQUFBLENBQUMsQ0FBQyxTQUFELENBQUQsQ0FBYUMsS0FBYixDQUFtQixZQUFXO0FBQzFCRCxFQUFBQSxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdFLE9BQVg7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLE9BQUQsQ0FBRCxDQUFXRyxLQUFYLENBQWlCLEdBQWpCLEVBQXNCQyxNQUF0QixDQUE4QixHQUE5QjtBQUNILENBSEQiLCJzb3VyY2VzQ29udGVudCI6WyIkKFwiLnNlbGVjdFwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmFsbDFcIikuZmFkZU91dCgpO1xuICAgICQoXCIuYWxsMlwiKS5kZWxheSg1MDApLmZhZGVJbiggNDAwICk7XG59KTtcblxuXG5cbiJdfQ==</script></body></html>
+$(".select1B").click(function () {
+  $(".all2").fadeOut();
+  $(".eye").delay(5000).show(1).delay(49).hide(1);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsImZhZGVPdXQiLCJkZWxheSIsImZhZGVJbiIsInNob3ciLCJoaWRlIl0sIm1hcHBpbmdzIjoiQUFBQUEsQ0FBQyxDQUFDLFVBQUQsQ0FBRCxDQUFjQyxLQUFkLENBQW9CLFlBQVc7QUFDM0JELEVBQUFBLENBQUMsQ0FBQyxPQUFELENBQUQsQ0FBV0UsT0FBWDtBQUNBRixFQUFBQSxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdHLEtBQVgsQ0FBaUIsR0FBakIsRUFBc0JDLE1BQXRCLENBQTZCLEdBQTdCO0FBQ0gsQ0FIRCxFLENBSUE7O0FBQ0FKLENBQUMsQ0FBQyxVQUFELENBQUQsQ0FBY0MsS0FBZCxDQUFvQixZQUFXO0FBQzNCRCxFQUFBQSxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdFLE9BQVg7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLE1BQUQsQ0FBRCxDQUFVRyxLQUFWLENBQWdCLElBQWhCLEVBQXNCRSxJQUF0QixDQUEyQixDQUEzQixFQUE4QkYsS0FBOUIsQ0FBb0MsRUFBcEMsRUFBd0NHLElBQXhDLENBQTZDLENBQTdDO0FBQ0FOLEVBQUFBLENBQUMsQ0FBQyxPQUFELENBQUQsQ0FBV0csS0FBWCxDQUFpQixJQUFqQixFQUF1QkMsTUFBdkIsQ0FBOEIsR0FBOUI7QUFDSCxDQUpEO0FBS0FKLENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUMsS0FBZixDQUFxQixZQUFXO0FBQzVCRCxFQUFBQSxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdFLE9BQVg7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLE1BQUQsQ0FBRCxDQUFVRyxLQUFWLENBQWdCLElBQWhCLEVBQXNCRSxJQUF0QixDQUEyQixDQUEzQixFQUE4QkYsS0FBOUIsQ0FBb0MsRUFBcEMsRUFBd0NHLElBQXhDLENBQTZDLENBQTdDO0FBQ0gsQ0FIRCIsInNvdXJjZXNDb250ZW50IjpbIiQoXCIuc2VsZWN0QVwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmFsbDFcIikuZmFkZU91dCgpO1xuICAgICQoXCIuYWxsMlwiKS5kZWxheSg1MDApLmZhZGVJbig0MDApO1xufSk7XG4vLyMyXG4kKFwiLnNlbGVjdEJcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5hbGwyXCIpLmZhZGVPdXQoKTtcbiAgICAkKFwiLmV5ZVwiKS5kZWxheSg1MDAwKS5zaG93KDEpLmRlbGF5KDQ5KS5oaWRlKDEpO1xuICAgICQoXCIuYWxsM1wiKS5kZWxheSg3MDAwKS5mYWRlSW4oNDAwKTtcbn0pO1xuJChcIi5zZWxlY3QxQlwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmFsbDJcIikuZmFkZU91dCgpO1xuICAgICQoXCIuZXllXCIpLmRlbGF5KDUwMDApLnNob3coMSkuZGVsYXkoNDkpLmhpZGUoMSk7XG59KTtcblxuXG5cblxuIl19</script></body></html>
