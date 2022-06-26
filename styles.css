@@ -1,0 +1,16 @@
+body{
+background-color:black;    
+}
+p{
+	color:white;
+    font-family:VT323;
+    text-align:center;    
+}
+.box1{
+	border: solid white 5px;
+        
+}
+.select1{
+	display:flex;
+    justify-content:space-around;
+}
