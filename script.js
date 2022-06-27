@@ -11,6 +11,7 @@ $(".selectB").click(function() {
 $(".select1B").click(function() {
     $(".all2").fadeOut();
     $(".all4").delay(500).fadeIn(400);
+    $(".garden1").delay(500).fadeIn(400);
 });
 
 
