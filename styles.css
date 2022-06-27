@@ -26,7 +26,7 @@ p{
 .select:hover,.select1:hover{
 	color:grey;    
 }
-.all2,.all3,.all4,.eye{
+.all2,.all3,.all4{
    display:none;    
 }
 .eye{
@@ -34,6 +34,17 @@ p{
     background-size:cover;
     min-height:75vh;
     margin-top:100px;
+    display:none;
+}
+.garden{
+	width:30%;
+	display:block;
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.garden1{
+display:none;    
 }
 
 
