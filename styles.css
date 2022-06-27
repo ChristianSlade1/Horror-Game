@@ -44,7 +44,23 @@ p{
     margin-right:auto;
 }
 .garden1{
-display:none;    
+	display:none;    
+}
+.deathtext{
+	font-family:creepster;
+    text-align:center;
+    display:none;
+    color:red;
+    border:solid black 2px;
+    font-size:40px;
+}
+.deathtext1{
+	display:none;
+    text-align:center;
+    font-size:20px;
+}
+.death1{
+	    
 }
 
 
