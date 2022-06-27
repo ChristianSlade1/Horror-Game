@@ -13,6 +13,15 @@ $(".select1B").click(function() {
     $(".all4").delay(500).fadeIn(400);
     $(".garden1").delay(500).fadeIn(400);
 });
+$(".selectC").click(function() {
+    $(".all4").fadeOut();
+    $(".garden").fadeOut();
+    $(".deathtext").delay(3000).fadeIn(500);
+    $(".deathtext1").delay(4000).fadeIn(500);
+    var audio=document.getElementById("goofy");
+    audio.src="https://audio.jukehost.co.uk/8NaJP45gxeVANvdzQS2DzVBaeu8iDIsc";  
+    audio.play();
+});
 
 
 
