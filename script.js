@@ -43,6 +43,19 @@ $(".selectD").click(function() {
     $(".wintext").delay(1000).fadeIn(500);
     $(".wintext1").delay(2000).fadeIn(500);    
 });
+$(".select1E").click(function() {
+    $(".all3").fadeOut();
+    $(".deathtextC").delay(3000).fadeIn(500);
+    $(".deathtext3").delay(4000).fadeIn(500);
+    var audio=document.getElementById("stab");
+    audio.src="https://audio.jukehost.co.uk/DVELi7RQRvbnY0ZwBkMLIOUZSv1ea3Dl";  
+    audio.play();
+});
+$(".selectE").click(function() {
+    $(".all3").fadeOut();
+    $(".deathtextC").delay(3000).fadeIn(500);
+    $(".deathtext3").delay(4000).fadeIn(500);
+});
     
 
 
