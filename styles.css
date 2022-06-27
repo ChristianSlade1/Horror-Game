@@ -24,13 +24,16 @@ p{
 	margin-top:200px;
 }
 .select:hover,.select1:hover{
-color:grey;    
+	color:grey;    
 }
-.all2,.all3,.eye{
+.all2,.all3,.all4,.eye{
    display:none;    
 }
 .eye{
-min-height:100vh;    
+	margin-left:500px;
+    background-size:cover;
+    min-height:75vh;
+    margin-top:100px;
 }
 
 
