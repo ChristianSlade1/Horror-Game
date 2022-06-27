@@ -10,7 +10,7 @@ $(".selectB").click(function() {
 });
 $(".select1B").click(function() {
     $(".all2").fadeOut();
-    $(".eye").delay(5000).show(1).delay(49).hide(1);
+    $(".all4").delay(500).fadeIn(400);
 });
 
 
